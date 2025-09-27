@@ -1,6 +1,19 @@
-function toggleMenu(){
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
+// Dark Mode Toggle using profile picture
+const togglePic = document.getElementById("darkModeToggle");
+const body = document.body;
+
+// Load saved theme
+if (localStorage.getItem("darkMode") === "enabled") {
+  body.classList.add("dark-mode");
 }
+
+// Toggle on profile picture click
+togglePic.addEventListener("click", () => {
+  body.classList.toggle("dark-mode");
+
+  if (body.classList.contains("dark-mode")) {
+    localStorage.setItem("darkMode", "enabled");
+  } else {
+    localStorage.setItem("darkMode", "disabled");
+  }
+});
