@@ -1,3 +1,11 @@
+function toggleMenu() {
+  const menuLinks = document.querySelector(".menu-links");
+  const hamburgerIcon = document.querySelector(".hamburger-icon");
+
+  menuLinks.classList.toggle("open");
+  hamburgerIcon.classList.toggle("open");
+}
+
 // Dark Mode Toggle using profile picture
 const togglePic = document.getElementById("darkModeToggle");
 const body = document.body;

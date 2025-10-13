@@ -84,11 +84,27 @@
         gap: 0.5rem;
         text-align: center;
     }
-    .section__pic-container {
+    /* .section__pic-container {
         width: auto;
         height: 46vw;
         justify-content: center;
-    }
+    } */
+    .section__pic-container {
+        width: 200px;       
+        height: 200px;      /* fixed height */
+        margin: 0 auto;     /* center it */
+        border-radius: 50%; /* keeps it circular */
+        overflow: hidden;   /* hide overflow so img stays inside circle */
+      }
+      
+      .section__pic-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;  /* keeps proportions */
+        border-radius: 50%; /* ensures circle shape */
+      }
+      
+
     .section__text__p2 {
         font-size: 1.25rem;
     }
