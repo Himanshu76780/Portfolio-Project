@@ -247,7 +247,7 @@ body.dark-mode .icon {
   display: flex;
 }
 .about-pic {
-  border-radius: 32px;
+  border-radius: 25%;
 }
 .arrow {
   position: absolute;
