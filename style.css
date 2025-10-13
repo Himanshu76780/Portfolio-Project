@@ -89,6 +89,10 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transform: all 300ms ease-in-out;
+
+  z-index: 9999;             /* ensures it stays above all other elements */
+ 
+
 }
 .menu-links a {
   display: block;
@@ -144,6 +148,7 @@ section {
 /*profile section */
 .profile-pic {
   border-radius: 50%;
+  z-index: -1; /* Lower z-index */
 }
 #profile {
   display: flex;
@@ -665,7 +670,7 @@ body.dark-mode .toggle-pic {
   pointer-events: none;
 }
 
-/* Hover effects */
+/* Hover effectsd */
 .hover-img-container:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
@@ -674,3 +679,5 @@ body.dark-mode .toggle-pic {
 .hover-img-container:hover .hover-content {
   opacity: 1;
 }
+
+
